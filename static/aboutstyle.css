@@ -1,0 +1,9 @@
+body{
+    background-color: black;
+}
+p{
+    font-size: 25px;
+    color:khaki;
+    padding: 3px 10px;
+    text-align:justify;
+}

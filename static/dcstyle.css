@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#navbar{
+    background-color:black;
+    padding: 17px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+#logo #img{
+    height: 30px;
+    filter:invert(1);
+}
+
+
+#navbar li{
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 15px;
+    color: rgb(248, 8, 136) ;
+    font-size: 20px;
+    font-weight: 700;
+}
+#navbar li a:hover{
+    color:cyan;
+}
+
+#introSection{
+    padding-bottom: 40px;
+    color:lemonchiffon;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height:620px;
+    background: url('../static/bg.jpg') no-repeat center/cover;
+    /* margin: 0; */
+    
+}
+#introSection div.small{
+    font-size: 35px;
+}
+#missionsection{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-color:black;
+}
+#missionsection h2{
+    text-align: center;
+    padding: 3px;
+    padding-top: 10px;
+    margin-top: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color:deeppink;
+}
+.missoncontainer{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* align-items: center; */
+}
+.card{
+    border: 2px solid rgb(31, 28, 28);
+    background-color: crimson;
+    border-radius: 20px;
+    height: 80%;
+    width: 30%;
+    padding: 20px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.card:hover{
+    background-color:cyan;
+}
+.sponsorescontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+#sponsoresSection h2{
+    color:deeppink;
+    margin: 5px;
+    margin-top: 15px;;
+
+}
+.sponsor{
+    /* padding: 15px; */
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+.sponsor:hover{
+    border: 3px solid deeppink;
+}
+
+.sponsor1{
+    height: 80%;
+    width: 30%;
+    background:url('../static/sp1.jpg')no-repeat center/cover ;
+}
+.sponsor2{
+    height: 80%;
+    width: 30%;
+    background:url('../static/sp2.jpg')no-repeat center/cover ;
+}
+.sponsor3{
+    height: 80%;
+    width: 30%;
+    background:url('../static/sp3.jpg')no-repeat center/cover ;
+}
+#sponsoresSection{
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 25px; */
+    background-color:black;
+}
+#footer{
+    height: 60px;
+    background-color:black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1400px) {
+    #introSection{
+        height:400px;
+    }
+    .missoncontainer{
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #missionsection{
+        height: 1500px;
+    }
+    .card{
+        border: 2px solid rgb(31, 28, 28);
+        background-color: crimson;
+        border-radius: 20px;
+        height: 30%;
+        width: 80%;
+        padding: 20px;
+        margin: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #sponsoresSection{
+        height: 2400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sponsorescontainer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 80%;
+    }
+    .sponsor{
+        margin: 15px;
+        height: 30%;
+        width: 70%;
+    }
+    .sponsor1{
+        background:url('../static/sp1.jpg')no-repeat center/cover ;
+    }
+    .sponsor2{
+        background:url('../static/sp2.jpg')no-repeat center/cover ;
+    }
+    .sponsor3{
+        background:url('../static/sp3.jpg')no-repeat center/cover ;
+    }
+  }
