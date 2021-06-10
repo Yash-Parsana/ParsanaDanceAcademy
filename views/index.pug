@@ -1,0 +1,41 @@
+doctype html
+html
+    head 
+        title Parsana Dance Academy
+        style 
+            include ../static/dcstyle.css
+        link(rel="shortcut icon", href="../static/favicon-16x16.png", type="image/x-icon")
+    
+    body
+        nav#navbar
+            ul 
+                div#logo
+                    img#img(src="../static/icccon.png", alt="")
+                li #[a(href="/") Home] 
+                li #[a(href="/") About ]
+                li #[a(href="/") Services ]
+                li #[a(href="/") Class Info ]
+                li #[a(href="/contact") contact Us]
+        section#introSection 
+            div Welcome To Parsana Dance Academy
+            div.small Every Body Can Dance 
+        hr
+        section#missionsection 
+            h2 Our Mission
+            div.missoncontainer
+                div.card
+                   h3 Everybody can dance
+                div.card
+                   h3 Everybody should dance
+                div.card
+                   h3 #healthyIndia
+        //- hr
+        section#sponsoresSection
+            h2 Our sponsers
+            div.sponsorescontainer
+                div.sponsor1.sponsor
+                div.sponsor2.sponsor
+                div.sponsor3.sponsor
+        hr
+        footer#footer
+            | Copyright © 2021 ParsanaDanceAcadmey.com 

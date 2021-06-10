@@ -1,0 +1,32 @@
+extend base.pug
+
+block scripts 
+    script(src="../static/index.js")
+
+block style 
+    style 
+        include ../static/dcstyle.css
+block link
+    link(rel="shortcut icon", href="../static/favicon-16x16.png", type="image/x-icon")
+
+block content 
+
+    section#introSection 
+        div Welcome To Parsana Dance Academy
+        div.small Every Body Can Dance 
+    hr
+    section#missionsection 
+        h2 Our Mission
+        div.missoncontainer
+            div.card
+               h3 Everybody can dance
+            div.card
+               h3 Everybody should dance
+            div.card
+               h3 #healthyIndia
+    section#sponsoresSection
+        h2 Our sponsers
+        div.sponsorescontainer
+            div.sponsor1.sponsor
+            div.sponsor2.sponsor
+            div.sponsor3.sponsor

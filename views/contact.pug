@@ -1,0 +1,36 @@
+extend base.pug
+
+block scripts 
+    script(src="../static/index.js")
+
+block style 
+    style 
+        include ../static/dcstyle.css
+        include ../static/contactstyle.css
+block link
+    link(rel="shortcut icon", href="../static/favicon-16x16.png", type="image/x-icon")
+block content 
+    div#divh1
+        h1 contact us
+    h2 kindly fill up this form we will contact you soon
+    form(action="/contact",method="post",Class="form")
+        p#name Name : 
+            input(type="text",Class="name",name="name",placeholder="Input your name") 
+        p#number Mobile Number : 
+            input(type="number",Class="number",name="phone",placeholder="10 digit number") 
+        p#email Email : 
+            input(type="email",Class="email",name="email",placeholder="abc@xyz.com")
+        div#fieldset
+            fieldset 
+                legend 
+                    p#gender Gender
+                div#genderbox
+                    p#male Male 
+                        input(type="radio",Class="male",name="gender")
+                    p#female Female 
+                        input(type="radio",Class="female",name="gender")
+        p#age Age : 
+            input(type="number",name="age",Class="age")
+
+        input(type="submit",Class="submit",name="submit")
+

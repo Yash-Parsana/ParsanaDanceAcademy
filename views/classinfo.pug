@@ -1,0 +1,108 @@
+extend base.pug
+
+block scripts 
+    script(src="../static/index.js")
+    script(src="../static/classinfoscript.js") 
+
+block style 
+    style 
+        include ../static/dcstyle.css
+        include ../static/classinfostyle.css
+block link
+    link(rel="shortcut icon", href="../static/favicon-16x16.png", type="image/x-icon")
+
+block content 
+    div#tablecontainer
+        p#slot Please Book Your Slot
+        p#schedule Schedule
+        table
+            tr 
+                th#tt Time
+                th#t 9-10 AM
+                th#t 10-11 AM 
+                th#t 2-4 PM
+                th#t 6-8 PM
+            tr 
+                td#d MON 
+                td
+                    a#book(href="/contact") 
+                        |Hip Hop 
+                td 
+                    a#book(href="/contact") 
+                        |Jazz 
+                td 
+                    a#book(href="/contact") 
+                        |Ballroom 
+                td 
+                    a#book(href="/contact") 
+                        Hip Hop 
+            tr 
+                td#d TUE
+                td 
+                    a#book(href="/contact") 
+                        |Jazz 
+                td 
+                    a#book(href="/contact") 
+                        |Hip Hop 
+                td 
+                    a#book(href="/contact") 
+                        |Ballroom 
+                td 
+                    a#book(href="/contact") 
+                        |Jazz
+            tr 
+                td#d WED 
+                td 
+                    a#book(href="/contact") 
+                        |Ballroom 
+                td 
+                    a#book(href="/contact") 
+                        |Hip Hop 
+                td 
+                    a#book(href="/contact") 
+                        |Jazz 
+                td 
+                    a#book(href="/contact") 
+                        |Ballroom 
+            tr 
+                td#d THU 
+                td 
+                    a#book(href="/contact") 
+                        |Hip Hop 
+                td 
+                    a#book(href="/contact") 
+                        |Ballroon
+                td 
+                    a#book(href="/contact") 
+                        |Jazz 
+                td 
+                    a#book(href="/contact") 
+                        |Hip Hop
+            tr 
+                td#d FRI 
+                td 
+                    a#book(href="/contact") 
+                        |Jazz 
+                td 
+                    a#book(href="/contact") 
+                        |Hip Hop 
+                td 
+                    a#book(href="/contact") 
+                        |Ballroom 
+                td 
+                    a#book(href="/contact") 
+                        |Jazz 
+            tr 
+                td#d SAT 
+                td 
+                    a#book(href="/contact") 
+                        |Ballroom 
+                td 
+                    a#book(href="/contact") 
+                        |Hip Hop 
+                td 
+                    a#book(href="/contact") 
+                        |Jazz 
+                td 
+                    a#book(href="/contact") 
+                        |Ballroom 

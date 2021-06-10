@@ -1,0 +1,34 @@
+extend base.pug
+
+block scripts 
+    script(src="../static/index.js")
+
+block style 
+    style 
+        include ../static/dcstyle.css
+        include ../static/survicesstyle.css
+block link
+    link(rel="shortcut icon", href="../static/favicon-16x16.png", type="image/x-icon")
+
+block content 
+    hr
+    div#dancesection
+        p#dance Dances
+        div#dancetype
+            a#aimg(href="/classinfo") 
+                div#dance1
+                    p#hiphop Hip Hop
+                    img#img1.img(src="../static/dance1.png", alt="")
+            a#aimg(href="/classinfo") 
+                div#dance2
+                    p#jazz Jazz
+                    img#img2.img(src="../static/dance2.png", alt="")
+            a#aimg(href="/classinfo")
+                div#dance3
+                    p#ballroom Ballroom
+                    img#img3.img(src="../static/dance3.png", alt="")
+    
+    script 
+
+
+
